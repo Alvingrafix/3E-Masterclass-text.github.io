@@ -23,40 +23,47 @@
         .hover\:bg-vivid-orange-dark {
             background-color: #ea5109;
         }
+        .hero-bg {
+            background-image: url('DSCF3168.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
     </style>
 </head>
 <body class="antialiased">
     <div class="relative overflow-hidden">
         <!-- Hero Section -->
-        <div class="relative bg-white py-12 md:py-24">
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="hero-bg py-12 md:py-24">
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
                 <div class="text-center">
-                    <span class="inline-block text-sm font-semibold tracking-wide uppercase text-black rounded-full px-3 py-1 bg-gray-200">FREE LIVE MASTERCLASS</span>
-                    <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+                    <span class="inline-block text-sm font-semibold tracking-wide uppercase text-white rounded-full px-3 py-1 bg-vivid-orange">FREE LIVE MASTERCLASS</span>
+                    <h1 class="mt-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight drop-shadow-lg">
                         Fill Your Sales Pipeline and Book Qualified School Calls Before Winter Break
                     </h1>
-                    <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-700">
+                    <p class="mt-6 max-w-2xl mx-auto text-lg">
                         The proven plan for education founders to end the year strong—and grow revenue into Spring 2026.
                     </p>
                     <div class="mt-8 flex justify-center space-x-4">
-                        <button onclick="document.getElementById('cta-section').scrollIntoView({behavior: 'smooth'})" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-bold rounded-full shadow-sm text-white bg-vivid-orange hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vivid-orange transition-transform transform hover:scale-105">
+                        <button onclick="document.getElementById('cta-section').scrollIntoView({behavior: 'smooth'})" class="inline-flex items-center px-8 py-4 border border-transparent text-lg font-bold rounded-full shadow-sm text-black bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-transform transform hover:scale-105">
                             Save My Seat
                         </button>
                     </div>
-                    <div class="mt-4 text-center text-sm text-gray-600">
+                    <div class="mt-4 text-center text-sm">
                         <p class="font-medium">
                             <span class="text-vivid-orange font-bold">Seats are limited.</span> Live: Tuesday, September 24th, 2025 at 10:00 AM EST / 7:00 PM EST
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Image Section -->
-        <div class="relative bg-gray-50 py-12">
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="relative overflow-hidden rounded-xl shadow-lg">
-                    <img class="w-full h-auto object-cover" src="https://storage.googleapis.com/g.co/gemini/DSCF3168.jpg" alt="A classroom setting with a speaker and audience members.">
                 </div>
             </div>
         </div>
